@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love 💙</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px 14px;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: radial-gradient(
+        circle at top, #233d72, #101426 65%, #080b16
+      );
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 650px;
+      text-align: center;
+      padding: 30px 22px;
+      border: 1px solid #648bff55;
+      border-radius: 24px;
+      background: #ffffff09;
+      box-shadow: 0 0 40px #3279ff22;
+      backdrop-filter: blur(10px);
+      animation: appear 1s ease;
+    }
+
+    .heart {
+      font-size: 55px;
+      animation: heartbeat 1.4s infinite;
+    }
+
+    h1 {
+      color: #a7d4ff;
+      font-size: clamp(27px, 6vw, 40px);
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: #d4dff9;
+      line-height: 1.7;
+    }
+
+    button {
+      margin-top: 22px;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(120deg, #5a9cff, #7966ff);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 5px 25px #548cff55;
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    button:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 8px 30px #548cff88;
+    }
+
+    button:disabled {
+      cursor: default;
+    }
+
+    #message {
+      display: none;
+      text-align: left;
+      margin-top: 30px;
+      padding: 23px;
+      border-radius: 18px;
+      background: #111b33cc;
+      border: 1px solid #719dff44;
+      line-height: 1.9;
+      color: #e7edff;
+      white-space: pre-line;
+      animation: appear .8s ease;
+    }
+
+    #message h2 {
+      color: #a7d4ff;
+      text-align: center;
+    }
+
+    .signature {
+      text-align: center;
+      color: #a7d4ff;
+      font-weight: bold;
+      margin-top: 24px;
+    }
+
+    .music-player {
+      margin-top: 22px;
+      padding: 16px;
+      text-align: center;
+      border-radius: 15px;
+      background: #21365c88;
+      border: 1px solid #719dff44;
+    }
+
+    .music-player p {
+      color: #a7d4ff;
+      font-weight: bold;
+      margin-top: 0;
+    }
+
+    .music-player audio {
+      width: 100%;
+      height: 40px;
+    }
+
+    .small {
+      color: #a7b4d2;
+      font-size: 12px;
+      margin-top: 24px;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.13); }
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="heart">💙</div>
+
+    <h1>For My Love</h1>
+
+    <p class="subtitle">
+      I have something important to tell you.<br>
+      Please read this until the end, okay? 🥺
+    </p>
+
+    <button id="openButton" onclick="openMessage()">
+      Open My Heart ❤️
+    </button>
+
+    <article id="message">
+      <h2>I'm Sorry, My Love. 💙</h2>
+
+      <!-- MUSIC PLAYER -->
+      <div class="music-player">
+        <p>🎵 Our Song — Mahal Magmahal</p>
+
+        <audio id="bgMusic" controls loop preload="auto">
+          <source src="mahal-magmahal.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+
+        <small>Play our song while reading this. 💙</small>
+      </div>
+
+      Hey, my love. ❤️
+
+      First of all, I want to sincerely apologize for
+      the times I hurt you, disappointed you, or made
+      you feel like you weren't understood. I'm sorry
+      for the things I did wrong and for the moments
+      when I failed to make you feel loved the way
+      you deserve. I know that saying sorry doesn't
+      automatically fix everything, but I want you to
+      know that I truly mean it.
+
+      Ever since you came into my life, things have
+      felt different in a way I can't fully explain.
+      You became someone so special to me, someone
+      whose messages can make my day better and
+      whose presence means more to me than you
+      probably realize. I'm genuinely thankful that
+      our paths crossed. Out of all the people in this
+      world, I'm grateful that I got the chance to
+      know you, love you, and create memories with you.
+
+      I don't want you to think that my love for you
+      disappears whenever we have a misunderstanding.
+      Even when things aren't okay between us, you
+      still matter to me. I still care about you, your
+      feelings, your happiness, and the things that
+      trouble your heart. You're not just someone I
+      talk to when everything is fine. You're someone
+      I want to understand, even when things get hard.
+
+      There's something I've been wanting to tell you
+      honestly, and I hope you can understand where
+      I'm coming from. Sometimes, when your replies
+      become really short or you suddenly unfriend me
+      without explaining what happened, I feel hurt
+      and confused. I start wondering if I did something
+      wrong, if you're upset with me, or if you're slowly
+      getting tired of me.
+
+      I'm not telling you this to blame you or make you
+      feel guilty. I just want to be honest about my
+      feelings because you mean so much to me.
+      If something bothers you, please talk to me.
+      If you're upset, tell me. If you need space, I'll
+      try to understand. I would rather have an honest
+      conversation with you than be left guessing
+      about what's happening between us.
+
+      I hope we can both work on the way we handle
+      misunderstandings. I don't expect you to reply
+      happily every second of every day, and I know
+      you have your own feelings, problems, and days
+      when you don't feel like talking. I respect that.
+      I only hope that we can communicate instead of
+      suddenly pushing each other away.
+
+      I'm sorry for my mistakes, and I'm willing to
+      listen to yours too. I don't want our relationship
+      to become a place where either of us feels scared
+      to speak honestly. I want us to feel safe enough
+      to explain, apologize, forgive, and grow together.
+
+      My love, I want you to remember how important
+      you are to me. You brought happiness into my
+      life in ways you might not even notice. The little
+      moments, the conversations, the laughs, and even
+      the ordinary days we spend talking mean a lot
+      to me. I don't need everything to be perfect.
+      I just want something genuine with you, something
+      we both choose to take care of.
+
+      I can't promise that I'll never make a mistake
+      again, but I can promise that I'll try to learn
+      from them and become better. I want my actions
+      to show you that my apologies are real. And I
+      hope we can both give each other patience,
+      honesty, respect, and reassurance.
+
+      I love you, and I'm thankful that you came into
+      my life. I don't want to lose what we have over
+      things we could talk about and work through
+      together. I want to understand you better, and
+      I want you to understand me too.
+
+      If you're hurt, I'll listen. If you're upset, let's
+      talk. If we need time to calm down, we can take
+      that time. I just hope we won't give up on
+      communicating with each other.
+
+      Thank you for being part of my life. I'm sorry
+      for the times I've hurt you, and I hope you'll
+      let me show you how much you mean to me.
+      You are loved, you are appreciated, and you
+      matter to me more than these words can say.
+
+      <div class="signature">
+        I love you so much, always. 💙<br>
+        Yours, with all my heart. 🫶
+      </div>
+    </article>
+
+    <p class="small">Made with love, just for you. ✨</p>
+  </main>
+
+  <script>
+    function openMessage() {
+      const message = document.getElementById("message");
+      const button = document.getElementById("openButton");
+      const music = document.getElementById("bgMusic");
+
+      message.style.display = "block";
+
+      button.textContent = "My Heart Is Yours 💙";
+      button.disabled = true;
+
+      // Try playing the song when the button is clicked.
+      music.volume = 0.35;
+
+      music.play().catch(() => {
+        // If autoplay is blocked, use the visible Play control.
+        console.log("Press Play on the music player.");
+      });
+
+      message.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  </script>
+</body>
+</html>
